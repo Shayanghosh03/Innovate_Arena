@@ -1,11 +1,14 @@
+# GameHeavenZone
+
+<img width="1917" height="963" alt="Image" src="https://github.com/user-attachments/assets/97d7cf2f-1899-499e-ad9b-48ec60476e05" />
 
 ## Live Link
 
 https://gameheavenzone.netlify.app/
 
-## GameHaven
+## GameHeaven
 
-GameHaven is a gaming showcase website built with HTML, CSS, and JavaScript. It presents popular games, provides detailed game information pages, supports login-gated Play Now links, and includes a working contact form powered by EmailJS.
+GameHeaven is a gaming showcase website built with HTML, CSS, and JavaScript. It presents popular games, provides detailed game information pages, supports login-gated Play Now links, and includes a working contact form powered by EmailJS.
 
 ## Website Highlights
 
