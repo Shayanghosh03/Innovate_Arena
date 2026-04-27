@@ -106,6 +106,27 @@ nav ul li a:hover {
     margin: 0 15px;
 }
 
+.game-page{
+    display: flex;
+    padding: 1px 15px;
+    width: 30px;
+    height: 25px;
+    margin-left: 20px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.game-page:hover {
+    cursor: pointer;
+    background-color: #dc0c10;
+    border: 1px solid #dc0c10;
+    font-weight: 500;
+    box-shadow: 0 0 10px #dc0c10;
+}
+
 nav ul li button {
     width: 100px;
     margin-left: 15px;

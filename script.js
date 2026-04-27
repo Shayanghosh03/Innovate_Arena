@@ -3,7 +3,9 @@ let text01 = "<b>🎯 Our Mission</b><br>Our mission is to create a thriving hub
 let text02 = "<br><br><b>🕹️ What We Offer</b><br>🏆 Competitive Tournaments – Compete in exciting tournaments and showcase your skills.<br>🧠 Workshops & Game Dev Sessions – Learn game development, design, and AI-driven techniques.<br>🎥 Gaming Reviews & Insights – Stay updated with the latest game releases and trends.<br>🤝 Community & Collaboration – Connect with like-minded individuals and collaborate on projects.<br><br><b>💡 Why GameHaven?</b><br>We’re not just about games – we’re about creating a space where creativity, strategy, and teamwork thrive. GameHaven is built by gamers, for gamers, ensuring that every experience resonates with our community.."
 
 let Login = false;
-function alertnone () {window.open("error.html");}
+function alertnone () {
+    window.open("error.html");
+}
 
 function loginstatus () {
     Login = !Login;
