@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GameHaven - A Gaming Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
+
+    <script src="https://kit.fontawesome.com/9c83f578b5.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <section id="home">
+            <div id="homecard">
+                <div id="navbar">
+                    <h1 id="logo">
+                        <i class="fas fa-gamepad"></i>
+                        GameHaven
+                    </h1>
+                    <nav>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#games">Games</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                        <div id="vl"></div>
+                        <ul>
+                            <li><button class="activeonlogout vis" onclick="loginside()">Login</button></li>
+                            <li><button class="activeonlogout vis" onclick="signupside()">Sign Up</button></li>
+                            <li><button class="activeonlogin invis" onclick="loginstatus()">Logout</button></li>
+                        </ul>
+                    </nav>
+                </div>
+                <center>
+                    <div id="welcome">
+                        <h1>Welcome to GameHaven</h1>
+                        <p>
+                            Step into a world where gaming meets innovation! At GameHaven, we bring together a passionate community of gamers and developers to explore the limitless possibilities of gaming. <br>
+                            🔥 Get Ready to Dive In! Whether you're a seasoned gamer or just getting started, GameHaven is where your journey begins.
+                        </p>
+                        <ul>
+                            <li><button class="activeonlogout vis" onclick="loginside()">Login</button></li>
+                            <li><button class="activeonlogout vis" onclick="signupside()">Sign Up</button></li>
+                            <li><a href="#games" class="activeonlogin invis">Play Games</a></li>
+                        </ul>
+                    </div>
+                </center>
+            </div>
+        </section>
+    </header>
+    <main>
+            <section id="about">
+                <div id="aboutcontent">
+                    <h1>About Us</h1>
+                    <p id="aboutparagraph">
+                        Welcome to GameHaven - your ultimate destination where passion meets play! We are a dynamic community of gamers and developers who believe that gaming is more than just entertainment. Whether you're a casual player, an eSports enthusiast, or an aspiring game developer, GameHaven is your sanctuary to explore, connect, and grow.
+                    <p>
+                    <button onclick="readmore()" id="readmore">Read More ></button>
+                    <button onclick="readless()" id="readless">Read Less ></button>
+                </div>
+                <div id="aboutimg">
+                    <img src="images/phoenix.jpg">
+                </div>
+
+            </section>
+        <section id="games">
+            <center><h1>Our Games</h1></center>
+            <div id="flexbox">
+                <div class="gameplate">
+                    <div class="img">
+                        <img src="gamespic/a8a.jpg">
+                    </div>
+                    <div class="desc">
+                        <h4>Asphalt 8: Airborne</h4>
+                        <p>Asphalt 8: Airborne is a high-octane arcade racing game developed by Gameloft that delivers an adrenaline-pumping experience with stunning graphics, realistic physics, and intense multiplayer action.</p>
+                        <hr>
+                        <div class="btn-container">
+                            <button onclick="">Inofo</button>
+                            <button onclick="playnow()">Play Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="gameplate">
+                    <div class="img">
+                        <img src="gamespic/pubg.jpg">
+                    </div>
+                    <div class="desc">
+                        <h4>PUBG Mobile</h4>
+                        <p>PUBG is a thrilling battle royale game where 100 players parachute onto an island, scavenge for weapons, and fight to be the last one standing. With realistic graphics, intense gameplay, and multiple maps, PUBG offers solo, duo, and squad modes for a heart-racing survival experience.</p>
+                        <hr>
+                        <div class="btn-container">
+                            <button onclick="">Inofo</button>
+                            <button onclick="playnow()">Play Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="gameplate">
+                    <div class="img">
+                        <img src="gamespic/ff.jpg">
+                    </div>
+                    <div class="desc">
+                        <h4>Free Fire Max</h4>
+                        <p>Free Fire is a fast-paced battle royale game where 50 players land on an island and fight for survival in 10-minute matches. With diverse characters, unique abilities, and intense gameplay, it’s all about surviving till the end.</p>
+                        <hr>
+                        <div class="btn-container">
+                            <button onclick="">Inofo</button>
+                            <button onclick="playnow()">Play Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="gameplate">
+                    <div class="img">
+                        <img src="gamespic/cc.jpg">
+                    </div>
+                    <div class="desc">
+                        <h4>Candy Crush Saga</h4>
+                        <p>Candy Crush Saga is a fun and addictive puzzle game where players match colorful candies to complete levels and achieve high scores. With hundreds of levels and exciting challenges, it’s a perfect mix of strategy and sweet satisfaction!</p>
+                        <hr>
+                        <div class="btn-container">
+                            <button onclick="">Inofo</button>
+                            <button onclick="playnow()">Play Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="gameplate">
+                    <div class="img">
+                        <img src="gamespic/bmi.jpg">
+                    </div>
+                    <div class="desc">
+                        <h4>Bright Memory: Infinite</h4>
+                        <p>Bright Memory: Infinite is a fast-paced first-person shooter that blends action, shooting, and swordplay in a futuristic world. </p>
+                        <hr>
+                        <div class="btn-container">
+                            <button onclick="">Inofo</button>
+                            <button onclick="playnow()">Play Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="gameplate">
+                    <div class="img">
+                        <img src="gamespic/sf4.jpg">
+                    </div>
+                    <div class="desc">
+                        <h4>Shadow Fight 4: Arena</h4>
+                        <p>Shadow Fight 4: Arena is an intense multiplayer fighting game where players control legendary shadow warriors with unique abilities. Engage in real-time 1v1 battles or team-based matches, using precise moves, combos, and strategies to defeat opponents.</p>
+                        <hr>
+                        <div class="btn-container">
+                            <button onclick="">Inofo</button>
+                            <button onclick="playnow()">Play Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="gameplate">
+                    <div class="img">
+                        <img src="gamespic/coc.jpg">
+                    </div>
+                    <div class="desc">
+                        <h4>Clash of Clans</h4>
+                        <p>Clash of Clans is a strategic multiplayer game where players build villages, train armies, and battle against others to defend their clan and conquer enemy bases. Join clans, participate in wars, and upgrade your defenses to dominate the battlefield.</p>
+                        <hr>
+                        <div class="btn-container">
+                            <button onclick="">Inofo</button>
+                            <button onclick="playnow()">Play Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="gameplate">
+                    <div class="img">
+                        <img src="gamespic/a9l.jpg">
+                    </div>
+                    <div class="desc">
+                        <h4>Asphalt 9: Legends</h4>
+                        <p>Asphalt 9: Legends is a high-speed arcade racing game featuring hyper-realistic graphics, iconic supercars, and breathtaking tracks. Players can perform incredible stunts, compete in multiplayer races, and climb the leaderboards to become a racing legend.
+                        </p>
+                        <hr>
+                        <div class="btn-container">
+                            <button onclick="">Inofo</button>
+                            <button onclick="playnow()">Play Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="gameplate">
+                    <div class="img">
+                        <img src="gamespic/ab.jpg">
+                    </div>
+                    <div class="desc">
+                        <h4>Angry Birds</h4>
+                        <p>Angry Birds is a fun and addictive physics-based game where players launch birds with unique abilities to destroy the pigs' defenses and reclaim their stolen eggs. With challenging levels and creative puzzles, it’s a perfect mix of strategy and fun!</p>
+                        <hr>
+                        <div class="btn-container">
+                            <button onclick="">Inofo</button>
+                            <button onclick="playnow()">Play Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="gameplate">
+                    <div class="img">
+                        <img src="gamespic/cod.jpg">
+                    </div>
+                    <div class="desc">
+                        <h4>Call of Duty: Mobile</h4>
+                        <p>Call of Duty is a legendary first-person shooter franchise known for its intense combat, realistic graphics, and gripping storylines. Players engage in multiplayer battles, war campaigns, and battle royale modes across various historical and modern settings.</p>
+                        <hr>
+                        <div class="btn-container">
+                            <button onclick="">Inofo</button>
+                            <button onclick="playnow()">Play Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="gameplate">
+                    <div class="img">
+                        <img src="gamespic/cr.jpg">
+                    </div>
+                    <div class="desc">
+                        <h4>Clash Royale</h4>
+                        <p>Clash Royale is a fast-paced strategy game where players collect cards, build decks, and battle in real-time duels to destroy enemy towers. With iconic characters from Clash of Clans and exciting multiplayer action, it’s a perfect blend of strategy and fun.</p>
+                        <hr>
+                        <div class="btn-container">
+                            <button onclick="">Inofo</button>
+                            <button onclick="playnow()">Play Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <center>
+            <section id="contact">
+                <table>
+                    <tr>
+                        <td width="60%">
+                            <div id="contactimg">
+                                <img src="images/contact.png">
+                            </div>
+                        </td>
+                        <td width="40%">
+                            <form id="contactForm">
+                                <h1>Contact Us</h1>
+                                <p>Full Name <span>*</span></p>
+                                <input type="text" placeholder="Enter your name" spellcheck="false" id="field01" name="name">
+                                <p class="emptywarning" id="contactwarning01"><span>This field is required.</span></p>
+                                <p>E-mail <span>*</span></p>
+                                <input type="email" placeholder="Enter your email" spellcheck="false" id="field02" name="email">
+                                <p class="emptywarning" id="contactwarning02"><span>This field is required.</span></p>
+                                <p>Message <span>*</span></p>
+                                <textarea placeholder="Type your message here..." id="field03" name="message"></textarea>
+                                <p class="emptywarning" id="contactwarning03"><span>This field is required.</span></p>
+                                <button type="submit">Submit</button>
+                            </form>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+        </center>
+    </main>
+    <footer>
+        <section id="footer">
+            <div id="footercontainer">
+                <div id="description">
+                    <h1>GameHaven</h1>
+                    <p>GameHaven is more than just a gaming platform – it's a thriving hub where gamers, developers, and enthusiasts unite to celebrate their love for gaming. Whether you're here to compete in thrilling tournaments, learn game development, explore new indie games, or simply connect with fellow gamers, GameHaven has something to offer for everyone.
+                    <br>
+                    <br>
+                    ⚡️ Join us today and unlock a universe where gaming and innovation collide!</p>
+                </div>
+                <div id="quicklinks">
+                    <h1>Quick Links</h1>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#games">Games</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div id="contactlinks">
+                    <h1>Contact</h1>
+                    <ul>
+                        <li><i class="fa-brands fa-facebook"></i> <span onclick="alertnone()">Facebook</span></li>
+                        <li><i class="fa-brands fa-instagram"></i> <span onclick="alertnone()">Instagram</span></li>
+                        <li><i class="fa-brands fa-twitter"></i> <span onclick="alertnone()">Twitter</span></li>
+                        <li><i class="fa-brands fa-facebook-messenger"></i> <span onclick="alertnone()">Messenger</span></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <center>
+                <div id="copyright">
+                    &copy; Copyright 2026 | All rights reserved.
+                    <br>Created By Shayan Ghosh - Innovate Arena
+                </div>
+            </center>
+        </section>
+    </footer>
+    <section id="absolute">
+        <div id="shadow">
+            <center>
+                <div id="greetingside">
+                    <div>
+                        <h1>Welcome to GameHaven</h1>
+                        <p>
+                            GameHaven is the best online gaming website.<br>
+                            Login to enjoy the most exclusive games.
+                        </p>
+                    </div>
+                </div>
+            </center>
+            <div class="rightside" id="loginside">
+                <button class="closebtn" onclick="closepage()"><i class="fas fa-times"></i></button>
+                <center>
+                    <h1>Login</h1>
+                    <p id="message">Username: gamehaven | Password: 123456</p>
+                    <div id="usercontainer">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username" spellcheck="false" id="username">
+                    </div>
+                    <div id="passcontainer">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password" id="password">
+                    </div>
+                    <button class="textbtn" id="forgotpass" onclick="revealpass()">Show login info</button>
+                    <button id="loginbtn" onclick="login()">Login</button>
+                    <span>Don't have an account?</span>
+                    <button class="textbtn" onclick="signupside()">Sign up</button>
+                </center>
+            </div>
+            <div class="rightside" id="signupside">
+                <button class="closebtn" onclick="closepage()"><i class="fas fa-times"></i></button>
+                <center>
+                    <h1>Sign Up</h1>
+                    <input type="text" placeholder="Username" spellcheck="false" id="sf01">
+                    <p id="mess01">This field is required.</p>
+                    <input type="email" placeholder="Email" spellcheck="false" id="sf02">
+                    <p id="mess02">This field is required.</p>
+                    <input type="password" placeholder="Password" id="sf03">
+                    <p id="mess03">Password must be at least 8 characters.</p>
+                    <input type="password" placeholder="Confirm Password" id="sf04">
+                    <p id="mess04">Confirm Password doesn't match.</p>
+                    <button id="signupbtn" onclick="signup()">Sign up</button>
+                    <span>Already have an account?</span>
+                    <button class="textbtn" onclick="loginside()">Login</button>
+                </center>
+            </div>
+        </div>
+    </section>
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "OsYSMeTXW8DpUKaB0"
+            });
+        })();
+    </script>
+    <script src="email.js"></script>
+</body>
+</html>

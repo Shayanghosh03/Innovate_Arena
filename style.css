@@ -1,0 +1,835 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+/* Whole Page */
+* {
+    font-family: Poppins;
+    user-select: none;
+}
+
+html {scroll-behavior: smooth;}
+html::-webkit-scrollbar {width: 15px;}
+html::-webkit-scrollbar-track {background: #2a2a2a;}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #dc0c10;
+    border-radius: 20px;
+    border: 3px solid #2a2a2a;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    overflow-x: hidden;
+    background-color: #1f1f1f;
+}
+
+.btn-container {
+    display: flex;
+    gap: 10px; /* space between buttons */
+    align-items: center;
+}
+
+/* Home Section */
+#home {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.invis {display: none;}
+.vis {display: block;}
+
+#homecard {
+    height: 92.5vh;
+    width: 84vw;
+    background-image: url("images/wallpaper.jpg");
+    background-size: cover;
+    border-radius: 10px;
+    margin: 4vh 8vw;
+    box-shadow: 0 0 10px black;
+}
+
+#navbar {
+    width: 86%;
+    padding: 0 6% 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1f1f1f75;
+    border-radius: 10px 10px 0 0;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo i {
+    font-size: 35px;
+    margin: 15px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    margin: 0 10px;
+    font-size: 17.5px;
+}
+
+nav ul li a:hover {
+    color: #dc0c10;
+    font-weight: 400;
+    text-shadow: 0 0 5px #dc0c10;
+}
+
+#vl {
+    height: 60px;
+    background-color: white;
+    width: 2px;
+    margin: 0 15px;
+}
+
+nav ul li button {
+    width: 100px;
+    margin-left: 15px;
+    height: 35px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid;
+    border-radius: 15px;
+}
+
+nav ul li button:hover {
+    cursor: pointer;
+    background-color: #dc0c10;
+    border: 1px solid #dc0c10;
+    font-weight: 500;
+    box-shadow: 0 0 10px #dc0c10;
+}
+
+#welcome {
+    width: 60%;
+    margin-top: 15%;
+}
+
+#welcome h1 {
+    font-size: 40px;
+    margin: 0;
+    text-shadow: 0 0 10px black;
+}
+
+#welcome ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding-top: 20px;
+}
+
+#welcome ul button,
+#welcome ul a {
+    margin: 0 10px;
+    padding: 5px 15px;
+    border: 1px solid;
+    border-radius: 15px;
+    color: white;
+    background: transparent;
+    text-decoration: none;
+}
+
+#welcome ul button {
+    font-size: 15px;
+    width: 100px;
+}
+
+#welcome ul button:hover,
+#welcome ul a:hover {
+    cursor: pointer;
+    background-color: #dc0c10;
+    border: 1px solid #dc0c10;
+    box-shadow: 0 0 10px #dc0c10;
+}
+
+/* About Section */
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    margin: 7.5vh 0 10vh 15%;
+    padding-top: 7.5vh;
+}
+
+#aboutimg img {
+    width: 400px;
+    margin: 0 0 0 75px;
+    border-radius: 10px;
+}
+
+#readless {display: none;}
+
+#about h1 {
+    display: block;
+    font-size: 35px;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+#about button {
+    background: transparent;
+    color: white;
+    border: 1px solid;
+    font-size: 15px;
+    padding: 6px 15px;
+    border-radius: 7.5px;
+    margin-top: 15px ;
+}
+
+#about button:hover {
+    cursor: pointer;
+    background-color: #dc0c10;
+    border: 1px solid #dc0c10;
+    box-shadow: 0 0 5px #dc0c10;
+}
+
+/* Our Games Section */
+#games h1 {
+    font-size: 40px;
+    padding-top: 5vh;
+}
+
+#flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    flex-wrap: wrap;
+    margin: 0 12.5% 10vh 12.5%;
+}
+
+
+.gameplate {
+    width: 225px;
+    border-radius: 7.5px;
+    background-color: #2a2a2a;
+    padding: 3px;
+    margin: 7.5px;
+}
+
+.gameplate:hover{background-color: #111;}
+.gameplate hr {width: 95%;}
+.desc h4 {margin: 7.5px;}
+
+.img img {
+    height: 150px;
+    width: 225px;
+    border-radius: 5px ;
+}
+
+.desc p {
+    margin: 7.5px;
+    font-size: 10px;
+}
+
+.desc button {
+    display: block;
+    margin: 10px 12px 10px auto;
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 5px 12px;
+    cursor: pointer;
+    background: transparent;
+    color: white;
+}
+
+.desc button:hover {
+    background-color: #dc0c10;
+    border: 1px solid #dc0c10;
+    box-shadow: 0 0 10px #dc0c10;
+    font-weight: 500;
+}
+
+/* Contact Section */
+#contact table {
+    padding-right: 5%;
+    padding-top: 2.5vh;
+    margin: 5vh 0 10vh 0;
+}
+
+#contact img {
+    height: 425px;
+    border-radius: 5px;
+    margin: 20px 30px;
+}
+
+#contact input {
+    display: block;
+    width: 100%;
+    height: 30px;
+    border: 0;
+    border-radius: 3px;
+    color: white;
+    padding-left: 7.5px;
+    background-color: #2a2a2a;
+}
+
+#contact textarea {
+    display: block;
+    width: 100%;
+    height: 125px;
+    border: 0;
+    border-radius: 3px;
+    color: white;
+    padding-left: 7.5px;
+    background-color: #2a2a2a;
+}
+
+#contact p {
+    font-size: 12px;
+    margin: 0px 0 3px 0;
+}
+
+#contact button {
+    background: transparent;
+    margin: 17.5px 0;
+    cursor: pointer;
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 5px 15px;
+    color: white;
+}
+
+#contact button:hover {
+    background-color: #dc0c10;
+    border: 1px solid #dc0c10;
+    box-shadow: 0 0 5px #dc0c10;
+    font-weight: 500;
+}
+
+.emptywarning {
+    visibility: hidden;
+    font-size: 10px;
+}
+
+#contact table div {margin: 5px;}
+#contact h1 {margin: 0 0 17.5px 0;}
+#contact p span {color: red;}
+::placeholder {color: rgb(100, 100, 100);}
+
+/* Footer Section */
+footer {
+    padding-bottom: 4vh;
+    background-color: #111;
+}
+
+#footercontainer {
+    display: flex;
+    justify-content: space-between;
+    width: 70vw;
+    margin: 0 15vw;
+    padding: 3vh 0;
+}
+
+footer i {
+    height: 20px;
+    width: 20px;
+}
+
+footer li a {
+    text-decoration: none;
+    color: white
+}
+
+footer li a:hover,
+footer li span:hover {
+    padding-left: 10px;
+    cursor: pointer;
+    color: #dc0c10;
+    font-weight: 600;
+}
+
+footer ul {list-style: none;}
+footer li {margin: 5px;}
+footer hr {width: 85%;}
+#quicklinks h1,
+#contactlinks h1 {padding-left: 35px;}
+#description {width: 35vw;}
+#contactlinks {width: 15vw;}
+#quicklinks {width: 15vw;}
+#copyright {padding-top: 3vh;}
+
+/* Login / Signup Page */
+#absolute {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+#shadow {
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 5px #111;
+}
+
+#greetingside {
+    background-image: url("./images/welcome.jpg");
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 400px;
+    background-position: center 37.5%;
+    color: white;
+    border-radius: 10px 0 0 10px;
+    background-size: cover;
+    padding: 10px; 
+}
+
+#greetingside div {
+    margin: 40% 10px 250px 0;
+}
+
+#greetingside p {font-size: 14px;}
+
+.rightside {
+    height: 400px;
+    width: 300px;
+    backdrop-filter: blur(100px);
+    border-radius: 0 10px 10px 0;
+    padding: 10px;
+    background: rgba(35, 35, 35, 0.85)
+    
+}
+
+.textbtn {
+    background: transparent;
+    border: 0;
+    color: white;
+    padding: 2px;
+}
+
+.textbtn:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.closebtn{
+    display: block;
+    position: fixed;
+    right: 10px;
+    color: white;
+    border: 0;
+    font-size: 20px;
+    border-radius: 3px;
+    background: transparent;
+}
+
+.closebtn:hover {
+    color: red;
+    text-shadow: 0 0 3px red;
+    cursor: pointer;
+}
+
+
+#signupside center {padding-top: 5px;}
+#loginside center {padding-top: 25px;}
+
+#signupside input {
+    display: block;
+    width: 70%;
+    height: 32px;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 0 5px;
+    color: white;
+}
+
+#signupside p {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    width: 70%;
+    text-align: left;
+    margin-bottom: 5px;
+    color: #dc0c10;
+    font-weight: 600;
+    visibility: hidden;
+}
+
+#signupbtn {
+    display: block;
+    background: transparent;
+    color: white;
+    border: 1px solid;
+    padding: 5px 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+#signupbtn:hover {
+    font-weight: 500;
+    background-color: #dc0c10;
+    border: 1px solid #dc0c10;
+    box-shadow: 0 0 5px #dc0c10;
+}
+
+#loginside h1 {margin: 25px 0 10px 0;}
+#loginside span {font-size: 13.5px;}
+
+#message {
+    font-size: 12px;
+    padding: 0;
+    margin: 10px 0;
+    visibility: hidden;
+    user-select: text;
+}
+
+#loginbtn {
+    display: block;
+    background: transparent;
+    color: white;
+    border: 1px solid;
+    padding: 5px 20px;
+    border-radius: 10px;
+    margin: 15px 0 10px 0;
+    cursor: pointer;
+}
+
+#loginbtn:hover {
+    font-weight: 500;
+    background-color: #dc0c10;
+    border: 1px solid #dc0c10;
+    box-shadow: 0 0 5px #dc0c10;
+}
+
+#loginside input {
+    margin: 10px 0 0 5px;
+    border: 1px solid;
+    background: transparent;
+    width: 65%;
+    padding: 0 5px;
+    height: 30px;
+    border-radius: 5px;
+    color: white;
+}
+
+#forgotpass {
+    display: block;
+    margin: 3px 12% 0 auto;
+}
+
+/* Responsive Layout */
+@media (max-width: 1100px) {
+    #home {height: auto;}
+
+    #homecard {
+        width: 94vw;
+        height: auto;
+        min-height: 88vh;
+        margin: 3vh auto;
+    }
+
+    #navbar {
+        width: auto;
+        padding: 12px 20px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0;
+    }
+
+    #vl {
+        width: 70%;
+        height: 2px;
+        margin: 8px 0;
+    }
+
+    #welcome {
+        width: 82%;
+        margin: 12vh auto 8vh;
+    }
+
+    #welcome h1 {font-size: 34px;}
+
+    #about {
+        width: 88%;
+        margin: 6vh auto 8vh;
+        gap: 20px;
+    }
+
+    #aboutimg img {
+        width: min(380px, 100%);
+        margin: 0;
+    }
+
+    #flexbox {
+        width: 92%;
+        margin: 0 auto 8vh;
+    }
+
+    #contact table {
+        width: 92%;
+        margin: 4vh auto 8vh;
+        padding-right: 0;
+    }
+
+    #contact img {
+        width: 100%;
+        max-width: 450px;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    #footercontainer {
+        width: 88vw;
+        margin: 0 auto;
+    }
+
+    #description {width: 42vw;}
+    #quicklinks,
+    #contactlinks {width: 20vw;}
+}
+
+@media (max-width: 768px) {
+    html::-webkit-scrollbar {width: 10px;}
+
+    #logo {
+        font-size: 24px;
+        margin: 5px 0;
+    }
+
+    #logo i {
+        font-size: 28px;
+        margin: 0 10px 0 0;
+    }
+
+    nav ul li a {
+        margin: 0 4px;
+        font-size: 15px;
+        padding: 5px 8px;
+    }
+
+    nav ul li button {
+        width: 90px;
+        margin-left: 8px;
+        height: 32px;
+        font-size: 13px;
+    }
+
+    #welcome {
+        width: 90%;
+        margin-top: 10vh;
+    }
+
+    #welcome h1 {font-size: 29px;}
+
+    #welcome p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    #welcome ul {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding-top: 12px;
+    }
+
+    #about {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding-top: 5vh;
+    }
+
+    #about h1 {
+        margin: 0 auto 10px;
+        font-size: 31px;
+    }
+
+    #aboutparagraph {text-align: left;}
+
+    #games h1 {
+        font-size: 32px;
+        padding-top: 2vh;
+    }
+
+    .gameplate {
+        width: min(320px, 92vw);
+        margin: 10px 0;
+    }
+
+    .img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .desc p {font-size: 12px;}
+
+    #contact table,
+    #contact tbody,
+    #contact tr,
+    #contact td {
+        display: block;
+        width: 100%;
+    }
+
+    #contact td {
+        padding: 0;
+    }
+
+    #contactform {
+        width: min(500px, 100%);
+        margin: 0 auto;
+    }
+
+    #contact p {font-size: 13px;}
+
+    #footercontainer {
+        flex-direction: column;
+        gap: 12px;
+        width: 90vw;
+    }
+
+    #description,
+    #quicklinks,
+    #contactlinks {
+        width: 100%;
+    }
+
+    #quicklinks h1,
+    #contactlinks h1 {padding-left: 0;}
+
+    #shadow {
+        width: min(760px, 94vw);
+        flex-direction: column;
+    }
+
+    #greetingside {
+        width: auto;
+        height: 220px;
+        border-radius: 10px 10px 0 0;
+    }
+
+    #greetingside div {margin: 32% 10px 0 0;}
+
+    .rightside {
+        width: auto;
+        border-radius: 0 0 10px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    #homecard {
+        width: 96vw;
+        margin: 2vh auto;
+    }
+
+    #navbar {padding: 10px 12px;}
+
+    nav ul {
+        gap: 4px;
+        margin: 0;
+    }
+
+    nav ul li a {
+        font-size: 13px;
+        padding: 4px 6px;
+    }
+
+    nav ul li button {
+        width: 80px;
+        margin-left: 4px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    #welcome {
+        width: 92%;
+        margin-top: 8vh;
+    }
+
+    #welcome h1 {font-size: 24px;}
+
+    #welcome p {
+        font-size: 13px;
+        line-height: 1.45;
+    }
+
+    #welcome ul button,
+    #welcome ul a {
+        width: 120px;
+        text-align: center;
+        font-size: 13px;
+    }
+
+    #about {
+        width: 92%;
+        margin: 4vh auto 6vh;
+    }
+
+    #about h1 {font-size: 26px;}
+
+    #games h1 {font-size: 28px;}
+
+    .desc h4 {font-size: 15px;}
+    .desc button {padding: 6px 10px;}
+
+    #contact img {margin-top: 8px;}
+    #contact h1 {font-size: 30px;}
+
+    #greetingside {
+        height: 180px;
+        background-position: center;
+    }
+
+    #greetingside div {margin: 22% 10px 0 0;}
+    #greetingside p {font-size: 13px;}
+
+    .rightside {
+        width: auto;
+        height: auto;
+        min-height: 380px;
+    }
+
+    #loginside input,
+    #signupside input {width: 78%;}
+
+    #forgotpass {margin-right: 10%;}
+}
