@@ -3,6 +3,7 @@ let text01 = "<b>🎯 Our Mission</b><br>Our mission is to create a thriving hub
 let text02 = "<br><br><b>🕹️ What We Offer</b><br>🏆 Competitive Tournaments – Compete in exciting tournaments and showcase your skills.<br>🧠 Workshops & Game Dev Sessions – Learn game development, design, and AI-driven techniques.<br>🎥 Gaming Reviews & Insights – Stay updated with the latest game releases and trends.<br>🤝 Community & Collaboration – Connect with like-minded individuals and collaborate on projects.<br><br><b>💡 Why GameHaven?</b><br>We’re not just about games – we’re about creating a space where creativity, strategy, and teamwork thrive. GameHaven is built by gamers, for gamers, ensuring that every experience resonates with our community.."
 
 let Login = false;
+let pendingGameUrl = null;
 function alertnone () {
     window.open("error.html");
 }
@@ -40,11 +41,23 @@ function loginstatus () {
     }
 }
 
-function playnow () {
-    if (Login) 
-        alertnone();
-    else
-        alert("Please login to play this game.");
+function playnow(gameUrl) {
+    // First check login
+    if (Login !== true) {
+        pendingGameUrl = gameUrl || "";
+        alert("Please login first to play this game.");
+        loginside(); // Open login form
+        return;
+    }
+
+    // After login, check if game URL exists
+    if (!gameUrl) {
+        alertnone(); // No game available
+        return;
+    }
+
+    // Open game if logged in and URL exists
+    window.open(gameUrl, "_blank");
 }
 
 function submit () {
@@ -149,9 +162,14 @@ function login () {
     var user = document.getElementById("username").value;
     var pass = document.getElementById("password").value;
 
-    if ((user == "gamehaven") && (pass == 123456)) {
+    if ((user === "gamehaven") && (pass === "123456")) {
         closepage();
         loginstatus();
+
+        if (pendingGameUrl) {
+            window.open(pendingGameUrl, "_blank");
+            pendingGameUrl = null;
+        }
     }
     else {
         var element = document.getElementById("message");
